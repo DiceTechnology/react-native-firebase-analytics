@@ -17,9 +17,11 @@ android {
 }
 
 dependencies {
+    def firebaseCoreVersion = project.hasProperty('firebaseCoreVersion') ? project.firebaseCoreVersion : DEFAULT_FIREBASE_CORE_VERSION
+
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.facebook.react:react-native:+'
-    compile 'com.google.firebase:firebase-core:+'
-    compile 'com.google.firebase:firebase-analytics:+'
+    compile "com.google.firebase:firebase-core:$firebaseCoreVersion"
+    compile "com.google.firebase:firebase-analytics:$firebaseCoreVersion"
 }
 
