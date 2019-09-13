@@ -1,5 +1,6 @@
 #import "RNFIRAnalytics.h"
 #import <FirebaseAnalytics/FirebaseAnalytics.h>
+#import <FirebaseCore/FIRAnalyticsConfiguration.h>
 
 @implementation RNFIRAnalytics
 
